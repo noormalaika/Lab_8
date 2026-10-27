@@ -1,0 +1,23 @@
+# Task 3 — Interactive Dashboard Notes
+
+**1. What changed in the customer table when the filter direction was changed to Both?**
+
+With Single filter direction, selecting Laptop in the Product slicer displayed all four customers: Ali Khan, Sara, Ahmed, and Hina.
+
+After changing the Customers–Sales relationship to Both, only Ali Khan appeared because the product filter could propagate through Sales to the Customers table.
+
+**2. Which customer has no orders?**
+
+Hina has no orders.
+
+**3. Which product was never sold?**
+
+Monitor was never sold.
+
+**4. Why does Computers Sales show 900 on the Accessories row?**
+
+This happens when the measure calculates sales using a fixed Computers filter that overrides the current category filter. Therefore, even on the Accessories row, it returns the Computers sales value of 900 instead of the Accessories sales value. This illustrates how CALCULATE can replace an existing filter on the same column.
+
+**Conclusion**
+
+The experiment demonstrates how relationship filter direction affects the visibility of data across related tables, and how DAX filter context and visual interactions influence Power BI reports. The Customers–Sales relationship was restored to Single after testing.
